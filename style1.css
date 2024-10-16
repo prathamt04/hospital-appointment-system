@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 8px rgba(22, 160, 133, .2);
+    --text-shadow: .4rem .4rem rgba(0, 0, 0, .2);
+    --border: .2rem solid var(--green);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    width: 350px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 20px;
+    text-shadow: var(--text-shadow);
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 1rem;
+    margin-bottom: 15px;
+    border: var(--border);
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    background-color: #fff;
+}
+
+.login-container input[type="submit"] {
+    padding: 1rem;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #13896b;
+}
+
+.login-container p {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
+
+.login-container a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media(max-width: 450px) {
+    .login-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        font-size: 1.4rem;
+    }
+}

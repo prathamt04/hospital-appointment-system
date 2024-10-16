@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>medcare.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"><i class="fas fa-heartbeat"></i>medcare.</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">services</a>
+            <a href="aboutus.html">about</a>
+            <a href="#doctors">doctors</a>
+            <a href="#book">book</a>
+            <a href="#here">contact us</a>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+    </header>
+
+    <p><br></p>
+    <p><br></p>
+
+    <section class="home" id="home">
+        <div class="image">
+            <center> <img src="home-img.svg" alt="net issue" height="1000" width="1000">
+            </center>
+        </div>
+        <div class="content">
+            <h3>Stay Safe ,Stay Healthy</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur atque veritatis </p>
+            <a href="#here" class="btn"> Contact Us <span class="fas fa-hevron-right"></span></a>
+        </div>
+
+
+
+    </section>
+
+
+
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+
+    <section class="services" id="services">
+
+        <h1 class="heading"> our <span>services</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-diagnoses"></i>
+                <h3>Hair Care</h3>
+                <p>Experts will solve all your problems, for sure!</p>
+                <a href="haircare.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-tooth"></i>
+                <h3>Dental Care</h3>
+                <p>Don't worry! Your smile is permanent, not your pain!</p>
+                <a href="dentalcare.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-child"></i>
+                <h3>Skin Care</h3>
+                <p>Look through our eyes, you are beautiful!</p>
+                <a href="skincare.html" class="btn"> learn more <span class="fas fa-chevron-right"></span> </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+    <p><br></p>
+
+    <section class="doctors" id="doctors">
+
+        <Center>
+            <h1 class="heading"> our <span><a href="doctors.html" style="color:#16a085;">team </a></span> </h1>
+        </Center>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="1shreyash.jpeg" alt="">
+                <h3>Dr.Shreyash Pise</h3>
+                <span>BDS, MDS, PGDCC, AOMSI <br> Hair Transplant Surgeon <br> Cosmetologist <br> Maxillo Facial
+                    Surgeon</span>
+            </div>
+
+            <div class="box">
+                <img src="1maty.jpeg" alt="">
+                <h3>Dr.Prathamesh Tamane</h3>
+                <span>BDS, FIFA <br> Cer. Endodontist <br> cer. orthodontist <br> Cer. laser surgeon</span>
+            </div>
+
+            <div class="box">
+                <img src="1WhatsApp Image 2023-03-22 at 9.16.16 PM.jpeg" alt="">
+                <h3>Dr.Avdhut gadghae</h3>
+                <span>MBBS, MS (Ortho) <br> Ortho Expert </span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Booking form section -->
+    <section class="book" id="book">
+        <h1 class="heading"> <span>book</span> now </h1>
+    
+        <div class="row">
+            <div class="image">
+                <img src="book-img.svg" alt="">
+            </div>
+    
+            <!-- Booking form -->
+            <form id="contactForm" action="save.php" method="post">
+                <input id="name" type="text" required placeholder="Name" name="name" class="box">
+                <input id="pnum" type="number" required placeholder="Phone Number" name="pnum" class="box">
+                <input id="email" type="email" required placeholder="Email" name="email" class="box">
+                <input id="gen" type="text" required placeholder="Gender (male/female)" name="gen" class="box">
+                <input id="issue" type="text" required placeholder="Issue" name="issue" class="box">
+                <input id="Date" type="date" required name="Date" class="box">
+                <select id="doctors" name="doctors" class="box">
+                    <option value="select">Choose a Doctor:</option>
+                    <option value="Dr.Shreyash Pise">Dr.Shreyash Pise</option>
+                    <option value="Dr.Prathamesh Tamane">Dr.Prathamesh Tamane</option>
+                    <option value="Dr.Avdhut gadghae">Dr.Avdhut gadghae</option>
+                </select>
+                <input type="submit" value="Book Now" class="btn">
+            </form>
+            
+            <div class="alert" style="display: none;">Appointment booked successfully!</div>
+        </div>
+    </section>
+    
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+                <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+                <a href="aboutus.html"> <i class="fas fa-chevron-right"></i> about us </a>
+                <a href="#doctors"> <i class="fas fa-chevron-right"></i> doctors </a>
+                <a href="#book"> <i class="fas fa-chevron-right"></i> Book Now</a>
+                <a href="#here"> <i class="fas fa-chevron-right"></i> contact Us </a>
+
+            </div>
+
+            <div class="box" id="here">
+                <h3>our services</h3>
+                <a href="dentalcare.html"> <i class="fas fa-chevron-right"></i> dental care </a>
+                <a href="haircare.html"> <i class="fas fa-chevron-right"></i> hair care </a>
+                <a href="skincare.html"> <i class="fas fa-chevron-right"></i> skin care </a>
+            </div>
+
+            <div class="box" id="here">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i> 9021889011</a>
+                <a href="#" class="mail"> <i class="fas fa-envelope"></i> chaitanyabadwaik@gmail.com </a>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i> somayya polytecnic <br> </a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/chaitanya.badwaik.1?mibextid=ZbWKwL"> <i
+                        class="fab fa-facebook-f"></i> facebook </a>
+                <a href="https://instagram.com/chaituuu_official?igshid=ZDdkNTZiNTM="> <i class="fab fa-instagram"></i>
+                    instagram </a>
+                <a href="https://twitter.com/Chaituubadwaik?t=v_vkxwUCTsOf8pWXGo5wow&s=09"><i
+                        class="fab fa-twitter"></i>twitter</a>
+            </div>
+
+        </div>
+
+        <div class="credit">Copyright © 2023 <span><a href=index.html>medcare. </a> </span> | all rights
+            reserved </div>
+
+
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="mail.js"></script>
+</body>
+
+</html>
